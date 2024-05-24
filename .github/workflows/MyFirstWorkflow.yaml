@@ -4,6 +4,10 @@ on:
     branches: 
       - main
   workflow_dispatch:
+    inputs:
+      homedrive:
+        description: 'The home drive on the machine.'
+        required: true
 jobs:
   MyFirstJob:
     runs-on: ubuntu-latest
