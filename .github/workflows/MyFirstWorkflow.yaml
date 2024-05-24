@@ -19,3 +19,6 @@ jobs:
         run: |
           echo "The repository ${{ github.repository }} contains the following files:"
           tree
+      - name: Print Home Dir
+        run: |
+          echo "Homedir: ${{ inputs.homedrive }}"
